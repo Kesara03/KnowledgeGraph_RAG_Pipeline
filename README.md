@@ -8,7 +8,7 @@ This repository presents a complete RAG pipeline that combines structured knowle
 
 ## Knowledge Graph Visualization
 
-The following demonstration shows the complete RAG pipeline in action - exploring the Neo4j knowledge graph structure and executing complex historical queries with real-time hybrid retrieval and response generation.
+The following demonstration shows the RAG pipeline in action - exploring the Neo4j knowledge graph structure.
 
 ![System Demo](Resources/demo.gif)
 
