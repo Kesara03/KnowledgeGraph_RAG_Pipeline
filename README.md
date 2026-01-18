@@ -6,6 +6,14 @@ A production-grade implementation of a hybrid Retrieval-Augmented Generation (RA
 
 This repository presents a complete RAG pipeline that combines structured knowledge graph representations with unstructured text retrieval to answer complex queries about historical relationships between Greenland, Norway, and Denmark. The system employs LLM-powered entity extraction, graph construction, and hybrid search mechanisms to provide contextually accurate responses grounded in both semantic similarity and graph traversal.
 
+## Knowledge Graph Visualization
+
+The following demonstration shows the complete RAG pipeline in action - exploring the Neo4j knowledge graph structure and executing complex historical queries with real-time hybrid retrieval and response generation.
+
+![System Demo](Resources/demo.gif)
+
+*Interactive demonstration: Exploring entities and relationships in the Neo4j graph.*
+
 ## System Architecture
 
 The pipeline consists of four primary components:
@@ -88,6 +96,17 @@ Context (Structured + Unstructured) → LLM → Natural Language Response
 - Fulltext index on `__Entity__.id`
 - Vector index on `Document.embedding` (1536 dimensions)
 - Keyword index for hybrid search
+
+### Graph Statistics
+
+The knowledge graph constructed from Wikipedia articles contains:
+
+- **Total Nodes**: 300+ entities and document chunks
+- **Total Relationships**: 500+ semantic connections
+- **Entity Types**: People, Places, Organizations, Events, Political Entities
+- **Relationship Types**: 20+ distinct relationship categories
+- **Temporal Coverage**: 2500 BCE to 2026 CE
+- **Geographic Scope**: Arctic region (Greenland, Norway, Denmark, Iceland)
 
 ## Key Features
 
